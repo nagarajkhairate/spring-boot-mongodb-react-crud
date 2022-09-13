@@ -12,7 +12,7 @@ class  App extends React.Component {
     }
   }
   componentDidMount(){
-    axios.get("http://44.203.172.191:31111/api/")                   # kubernetes workernode ip
+    axios.get("http://44.203.172.191:31111/api/")               
     .then((res)=>{
       this.setState({
         users:res.data,
